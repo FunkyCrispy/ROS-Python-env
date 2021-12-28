@@ -23,7 +23,7 @@ This project contains packages below:
 |----vision_opencv
 ```
 
-geometry contains tf module, geometry2 contains tf2 module, ros_comm contains ROS commands such as 'rosrun', vision_opencv contains ROS
+Package geometry contains tf module, geometry2 contains tf2 module, ros_comm contains ROS commands such as 'rosrun', vision_opencv contains ROS
 message type conversion module 'cv_bridge'.
 These packages are downloaded and picked from ROS offical source code. You can also download source code, but some CMakeLists.txt need to 
 be modified.
