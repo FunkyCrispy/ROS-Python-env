@@ -39,9 +39,10 @@ be modified.
 pip install catkin_pkg rospkg empy pyyaml numpy
 ```
 3. Download this project and typing commands below. The 'catkin' related command are still in python2.7 environment, thus source ROS
-environment is still required, though using python3 specified arguments. You have to change python3.6 environment path in command
-'catkin_make_isolated', the 'ros-py36' is a conda environment of mine. Using 'catkin_make_isolated' so that each package can be compiled
-separately, for geometry and geometry2 have .cpp with the same name, if you use 'catkin_make' then error will occur.
+environment is still required, though using python3 specified arguments.
+You have to change python3.6 environment path in command 'catkin_make_isolated', the 'ros-py36' is a conda environment of mine.
+Using 'catkin_make_isolated' so that each package can be compiled separately, for geometry and geometry2 have .cpp with the same name, 
+if you use 'catkin_make' then error will occur.
 (For ROS-melodic, you might have to modify vision_opencv/cv_bridge/CMakeLists.txt, change line 'Boost REQUIRED python-py35' to
 'Boost REQUIRED python-py36')
 ```
@@ -57,8 +58,8 @@ catkin_make_isolated -DPYTHON_EXECUTABLE=/xxx/anaconda3/envs/ros-py36/bin/python
 ```
 source ./devel_isolated/setup.bash
 ```
-5. I found that when using this environment, there's still conflict with python2.7 ROS environment, thus command below is recommened. You can also add
-a 'alias' command in your ~/.bashrc to realize the same effect quickly. You have to change the python path to yours as well.
+5. I found that when using this environment, there's still conflict with python2.7 ROS environment, thus command below is recommened.
+You can also add a 'alias' command in your ~/.bashrc to realize the same effect quickly. You have to change the python path to yours as well.
 ```
 export PYTHONPATH=/home/anaconda3/envs/ros-py36/lib/python3.6/site-packages:$PYTHONPATH
 ```
